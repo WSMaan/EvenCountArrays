@@ -1,4 +1,6 @@
 class EvenCount {
+    public static final int divisor = 2;
+
     public static void main(String[] args) {
         int[] number1 = {2, 1, 2, 3, 4};
         int[] number2 = {2, 2, 0};
@@ -10,8 +12,9 @@ class EvenCount {
 
     public static int evenIntCount(int[] numbers) {
         int evenCount = 0;
+
         for (int number : numbers) {
-            evenCount += (number % 2 == 0) ? 1 : 0;
+            evenCount += (number % divisor == 0) ? 1 : 0;
         }
 
         return evenCount;
